@@ -25,8 +25,8 @@ class Genetic
 
  public:
   Genetic(
-    Graph* graph, int generations, int population_size,
-    int number_of_offsprings, double mutation_probability
+    Graph* graph, int generations = 150, int population_size = 100,
+    int number_of_offsprings = 2, double mutation_probability = 0.01
   );
   std::tuple<int, std::vector<int>> run_genetic();
 };
